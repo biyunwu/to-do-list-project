@@ -1,10 +1,87 @@
-#container {
-  width: 360px;
-  margin: 8% auto;
-  border: 2px solid gray;
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #74ebd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1 {
+  background-color: #2980b9;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 400; /*normal*/
+}
+
+li span {
+  background-color: red;
+  height: 100%;
+  width: 0;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1;
+}
+
+li {
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+}
+
+li:nth-child(2n){
+  background-color: #f7f7f7;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box; /*Get rid of the margins*/
+  border: none;
+  padding: 13px 13px 13px 20px;
+  background-color: #f7f7f7;
+  height: 40px;
+  font-size: 18px;
+}
+
+input:focus {
+  border: 3px solid #2980b9;
+  background-color: #fff;
+  outline: none; /*Avoid the default effect*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .checked {
   text-decoration: line-through;
   color: gray;
+}
+
+.fa-plus {
+  float: right;
+}
+
+.fa-trash-alt {
+  color: white;
+}
+
+#container {
+  width: 360px;
+  margin: 8% auto;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
